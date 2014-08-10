@@ -84,6 +84,40 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 
+	var $test_db_info = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'test_db_info',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+
+	//	ユニットテスト用のDB
+	var $test_suite = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'test',	//	MySQLのDB testを使用する
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+
+	var $test_db_user = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'test_db_user',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+
 	var $test = array(
 		'driver' => 'mysql',
 		'persistent' => false,

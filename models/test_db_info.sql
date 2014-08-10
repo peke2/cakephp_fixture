@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS `test_db_info`.`hello` ;
 CREATE TABLE IF NOT EXISTS `test_db_info`.`hello` (
   `id` INT NOT NULL,
   `comment` TEXT NULL,
-  `vakue` INT NULL,
+  `value` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
