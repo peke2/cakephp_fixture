@@ -20,7 +20,7 @@ class HelloTestCase extends CakeTestCase
 	 */
 	public function startTest($method)
 	{
-		$this->Hello = &ClassRegistry::init('Hello');
+		$this->Hello = &ClassRegistry::init('TestHello');
 		echo "テスト[$method]を開始<br>";
 	}
 
