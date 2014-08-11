@@ -3,7 +3,8 @@
 class HelloFixture extends CakeTestFixture
 {
 	var $name = 'Hello';
-	var $import = 'Hello';	//	参照先のモデルが見ているテーブルからカラムの情報をインポート？
+//	var $import = 'Hello';	//	参照先のモデルが見ているテーブルからカラムの情報をインポート？
+	var $import = array('model'=>'Hello', 'connection'=>'test_db_info');
 
 	var $table = 'hello';
 

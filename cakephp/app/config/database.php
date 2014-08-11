@@ -79,7 +79,8 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'test_db_info',
+		'database' => 'test_db_user',
+	//	'database' => 'test_db_info',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
@@ -91,18 +92,6 @@ class DATABASE_CONFIG {
 		'login' => 'root',
 		'password' => '',
 		'database' => 'test_db_info',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-
-	//	ユニットテスト用のDB
-	var $test_suite = array(
-		'driver' => 'mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'test',	//	MySQLのDB testを使用する
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
@@ -124,8 +113,21 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'test_db_info',
+		'database' => 'test',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
+
+	//	ユニットテスト用のDB
+	var $test_suite = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'test',	//	MySQLのDB testを使用する
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+
 }

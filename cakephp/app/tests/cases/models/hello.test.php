@@ -4,11 +4,14 @@ App::import('Model', 'Hello');
 
 //	参照先DBを変更したモデルクラスを定義
 //	クラス名は「Test」＋「モデルクラス名」にするらしい？
+
 class TestHello extends Hello
 {
 	var $cacheSource = false;
+//	var $useDbConfig = 'test';	//	参照先のDB設定を変更
 	var $useDbConfig = 'test_suite';	//	参照先のDB設定を変更
 }
+
 
 
 class HelloTestCase extends CakeTestCase
@@ -20,7 +23,8 @@ class HelloTestCase extends CakeTestCase
 	 */
 	public function startTest($method)
 	{
-		$this->Hello = &ClassRegistry::init('TestHello');
+	//	$this->Hello = &ClassRegistry::init('TestHello');
+		$this->Hello = &ClassRegistry::init('Hello');
 		echo "テスト[$method]を開始<br>";
 	}
 
